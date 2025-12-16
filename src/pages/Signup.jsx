@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import logo from '../../public/logo/BizConnect.png'; 
+const logo = "/logo/BizConnect.png"; 
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../auth/AuthProvider';
 import useAxiosPublic from '../hooks/useAxiosPublic';

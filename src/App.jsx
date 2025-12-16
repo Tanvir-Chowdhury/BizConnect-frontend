@@ -12,7 +12,7 @@ const App = () => {
           <a className="btn btn-ghost text-xl font-bold text-black mb-4">
             <img
               width="200px"
-              src="../../public/logo/BizConnect.png"
+              src="/logo/BizConnect.png"
               alt="BizConnect Logo"
             />
           </a>

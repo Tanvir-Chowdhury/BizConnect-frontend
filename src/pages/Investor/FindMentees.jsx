@@ -9,7 +9,7 @@ const FindEmployees = () => {
 
   // Function to fetch entrepreneur data
   useEffect(() => {
-    fetch('/public/entrprofile.json')
+    fetch('/entrprofile.json')
       .then(res => res.json())
       .then(data => {
         setEntrepreneurs(data);
@@ -19,7 +19,7 @@ const FindEmployees = () => {
 
   // Function to fetch user details
   useEffect(() => {
-    fetch('/public/user.json')
+    fetch('/user.json')
       .then(res => res.json())
       .then(data => {
         // Organize user details by email for easy lookup

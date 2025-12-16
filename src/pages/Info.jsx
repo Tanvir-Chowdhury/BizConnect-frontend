@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import logo from "../../public/logo/BizConnect.png";
+const logo = "/logo/BizConnect.png";
 import { useContext, useEffect, useState } from "react";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import PropTypes from "prop-types";

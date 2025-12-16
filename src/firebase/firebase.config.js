@@ -10,9 +10,14 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_appId
 };
 
+let app;
+let auth;
 
-const app = initializeApp(firebaseConfig);
-
-const auth = getAuth(app);
+try {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+} catch (error) {
+  console.error("Firebase initialization failed. Please check your .env file.", error);
+}
 
 export default auth;

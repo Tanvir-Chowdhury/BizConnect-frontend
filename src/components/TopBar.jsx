@@ -20,7 +20,7 @@ const TopBar = ({ portal }) => {
         <a className="text-xl font-bold text-black md:pb-2">
           <img
             className="md:w-[200px] w-[120px] ml-14 lg:ml-0"
-            src="../../public/logo/BizConnect.png"
+            src="/logo/BizConnect.png"
             alt=""
           />
         </a>

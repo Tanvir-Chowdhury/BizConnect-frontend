@@ -15,6 +15,11 @@ const AuthProvider = ({ children }) => {
 
     const [editing, setEditing] = useState(false)
     useEffect(() => {
+        if (!auth) {
+          console.warn("Auth is not initialized. Check firebase configuration.");
+          setLoading(false);
+          return;
+        }
         const unSubscribe = onAuthStateChanged(auth, (currentUser) =>{
             setUser(currentUser);
             setLoading(false);
