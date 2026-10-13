@@ -203,7 +203,7 @@ npm run dev
 
 ## Environment Variables
 
-Create a `.env` file in the project root with your Firebase web app config. These are read in `src/firebase/firebase.config.js`.
+Copy `.env.example` to `.env` in the project root and fill in your Firebase web app config. These are read in `src/firebase/firebase.config.js`. `.env` is git-ignored, so keep real values out of commits.
 
 | Variable | Purpose |
 | --- | --- |
